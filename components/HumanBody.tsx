@@ -1,5 +1,6 @@
+
 import React, { useState } from 'react';
-import { ORGAN_DATA, HUMAN_BODY_IMAGE_URL } from '../constants';
+import { ORGAN_DATA } from '../constants';
 import type { Organ } from '../types';
 import { OrganTooltip } from './OrganTooltip';
 
@@ -18,19 +19,19 @@ export const HumanBody: React.FC<HumanBodyProps> = ({ onOrganClick }) => {
 
   return (
     <div 
-      className="relative w-full aspect-[3/4] max-w-3xl mx-auto"
+      className="relative w-full aspect-[1/2] max-w-md mx-auto"
       onMouseMove={handleMouseMove}
       onMouseLeave={() => setHoveredOrgan(null)}
     >
       <img
-        src={HUMAN_BODY_IMAGE_URL}
-        alt="Anatomia Umană"
+        src="https://storage.googleapis.com/pai-images/f28e463a566649c2b4d9b4c062a4d35f.png"
+        alt="Corpul Uman"
         className="w-full h-full object-contain"
       />
       {ORGAN_DATA.map((organ) => (
         <div
           key={organ.id}
-          className="absolute rounded-md cursor-pointer transition-all duration-300 ease-in-out hover:bg-cyan-400/30 hover:backdrop-blur-sm"
+          className="absolute rounded-full cursor-pointer transition-all duration-300 ease-in-out hover:bg-cyan-400/30 hover:backdrop-blur-sm"
           style={organ.style}
           onMouseEnter={() => setHoveredOrgan(organ)}
           onClick={() => onOrganClick(organ)}

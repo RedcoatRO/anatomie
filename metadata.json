@@ -1,5 +1,5 @@
+
 {
   "name": "Anatomie Interactivă",
-  "description": "O aplicație web interactivă care permite utilizatorilor să exploreze organele corpului uman. La trecerea mouse-ului peste un organ, este afișată o descriere scurtă, iar la click se generează o explicație detaliată folosind Gemini API.",
-  "requestFramePermissions": []
+  "description": "O aplicație web interactivă care permite utilizatorilor să exploreze organele corpului uman. La trecerea mouse-ului peste un organ, este afișată o descriere scurtă, iar la click se generează o explicație detaliată folosind Gemini API."
 }
