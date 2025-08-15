@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { ORGAN_DATA } from '../constants';
+import { ORGAN_DATA, HUMAN_BODY_IMAGE_URL } from '../constants';
 import type { Organ } from '../types';
 import { OrganTooltip } from './OrganTooltip';
 
@@ -24,7 +23,7 @@ export const HumanBody: React.FC<HumanBodyProps> = ({ onOrganClick }) => {
       onMouseLeave={() => setHoveredOrgan(null)}
     >
       <img
-        src="https://i.imgur.com/gO08F5G.jpg"
+        src={HUMAN_BODY_IMAGE_URL}
         alt="Anatomia Umană"
         className="w-full h-full object-contain"
       />
