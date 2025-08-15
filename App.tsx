@@ -13,7 +13,7 @@ const App: React.FC = () => {
 
   const handleOrganClick = useCallback(async (organ: Organ) => {
     setSelectedOrgan(organ);
-    setIsLoading(true);
+setIsLoading(true);
     setError(null);
     setDetailedInfo('');
     try {
@@ -35,10 +35,10 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center p-4 font-sans">
       <header className="text-center mb-8">
         <h1 className="text-4xl md:text-5xl font-bold text-cyan-400 tracking-wider">
-          Anatomie Interactivă
+          ANATOMIA UMANĂ
         </h1>
         <p className="text-lg text-gray-400 mt-2 max-w-2xl">
-          Treceți mouse-ul peste un organ pentru o descriere rapidă sau dați click pentru informații detaliate generate de AI.
+          Treceți mouse-ul peste o etichetă sau diagramă pentru o descriere rapidă sau dați click pentru informații detaliate.
         </p>
       </header>
       
